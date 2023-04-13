@@ -798,6 +798,58 @@ sup {
           transform: scale(1);
           border-radius: 35px; }
 
+
+    #subscribe #notifyMe .form-group button.appstore {
+        font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 48px;
+        display: block;
+        height: 50px;
+        margin: 0 0 0 1rem;
+        padding: 0 3rem;
+        text-align: center;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        border-left: none;
+        background: #5f05ff;
+        width: auto;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        border-radius: 35px;
+    }
+
+        #subscribe #notifyMe .form-group button.appstore:after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: #FFFFFF;
+            transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+            transform: scale(0);
+            border-radius: 35px;
+        }
+
+        #subscribe #notifyMe .form-group button.appstore:hover {
+            color: #191c27;
+            border-color: rgba(255, 255, 255, 0.8);
+            background: transparent;
+        }
+
+            #subscribe #notifyMe .form-group button.appstore:hover:after {
+                left: 0;
+                transform: scale(1);
+                border-radius: 35px;
+            }
+
+
+
 .block-message {
   position: fixed;
   z-index: 200;
